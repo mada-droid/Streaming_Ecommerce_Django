@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Blog Post: Delete
+{% endblock %}
+
+{% block content %}
+    <h1>Delete new Blog Post</h1>
+    <h2>This Blog will be deleted with your click, are you sure ? </h2>
+    <h1>{{ object.title }}</h1>
+    <h3>{{ object.author }}</h3>
+    <p>{{ object.content }}</p>
+
+    <div>
+     <a href="{% url 'blog:blogpost-create' %}">
+            <button  class="btn btn-success">Create another</button>
+        </a>
+
+       <a href="{% url 'blog:blogpost-detail-list' %}">
+        <button class="btn btn-secondary">Cancel</button>
+            </a>
+
+        </div>
+    <br>
+
+    <form method="post">
+    {% csrf_token %}
+
+        <input type="submit" value="Confirm">
+    </form>
+
+{% endblock %}

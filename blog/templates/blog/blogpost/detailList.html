@@ -1,0 +1,40 @@
+{% extends "base_list.html" %}
+
+{% block list_title %}
+    Blog Post
+{% endblock %}
+
+{% block content_title %}
+   Blog Post Content
+    <a href="{% url 'blog:blogpost-create' %}">
+        <button type="button"
+                class="btn btn-outline-info" data-mdb-ripple-color="dark">
+            <b><i>New Post</i></b></button></a>
+{% endblock %}
+
+
+{% block thead %}
+    <th>Title</th>
+    <th>Author</th>
+    <th>Views</th>
+    <th>detail</th>
+{% endblock %}
+
+{% block tbody %}
+    {% for blogpost in object_list %}
+        <tr>
+            <td>{{ blogpost.title }}</td>
+            <td>{{ blogpost.author }}</td>
+            <td>{{ blogpost.views }}</td>
+            <td><a href="{% url 'blog:blogpost-detail' blogpost.pk %}">post</a>
+
+                <a href="{% url 'blog:blogpost-update' blogpost.pk %}">update</a>
+
+                <a href="{% url 'blog:blogpost-delete' blogpost.pk %}">delete</a>
+
+            </td>
+        </tr>
+    {% endfor %}
+
+{% endblock %}
+
