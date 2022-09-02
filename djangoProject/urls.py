@@ -16,21 +16,27 @@ Including another URLconf
 from django.conf.urls import handler404
 from django.contrib import admin
 from django.shortcuts import render
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from django.urls import include, path
+from django.contrib.auth import views as auth_views
 
-from djangoProject.views import Maintenance, HomePage, NotFound
+from djangoProject.views import Maintenance, HomePage, NotFound, UserDashBoard, UserCreateView
 
 urlpatterns = [
     path("", HomePage.as_view(), name="home-page"),
     path("maintenance/", Maintenance.as_view(), name="maintenance"),
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name="admin-dash"),
     path('404/', NotFound.as_view(), name="404-Not-Found"),
     path("blog/", include("blog.urls")),
+    path("user_dash_board/", UserDashBoard.as_view(), name="user-dash-board"),
+    path("user_registeration/", UserCreateView.as_view(), name="register"),
+    path("user_login/", auth_views.LoginView.as_view(), name="login"),
+    path("user_logout/", auth_views.LogoutView.as_view(), name="logout"),
 ]
 
+urlpatterns += staticfiles_urlpatterns()
 
-# handler404 = "blog.views.handle_not_found"
 
 
 

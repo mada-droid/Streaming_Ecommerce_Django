@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block title %}
+    user-login
+{% endblock %}
+
+{% block head %}
+    <style>
+        body {
+            background-image: linear-gradient(-315deg, #ffa69e 0%, #5d4954 74%);
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*edit*/
+        }
+
+        h1 {
+            font-family: "DejaVu Serif", serif;
+            text-align: center;
+        }
+
+        form {
+            padding: 30px;
+            width: 60%;
+            text-align: center;
+             color: antiquewhite;
+        }
+
+
+    </style>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+    <h1 style="color: aliceblue">SIGN IN</h1>
+    <form method="post">{% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" value="Login">
+    </form>
+{% endblock %}

@@ -6,10 +6,16 @@
 
 {% block content_title %}
    Blog Post Content
+    <p>Hey, {{ user.username }}</p>
     <a href="{% url 'blog:blogpost-create' %}">
         <button type="button"
-                class="btn btn-outline-info" data-mdb-ripple-color="dark">
-            <b><i>New Post</i></b></button></a>
+                class="button button4">
+            New Post</button></a>
+
+     <a href="{% url 'home-page' %}">
+        <button type="button"
+                class="button button5">
+            Home Page</button></a>
 {% endblock %}
 
 
