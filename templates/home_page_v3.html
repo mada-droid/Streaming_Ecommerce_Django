@@ -1,0 +1,361 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Rush Anime Home page</title>
+    <meta property="og:title" content="Vast Conventional Horse"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <style data-tag="reset-style-sheet">
+        html {
+            line-height: 1.15;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+        }
+
+        p, li, ul, pre, div, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        button, input, optgroup, select, textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+
+        button, [type="button"], [type="reset"], [type="submit"] {
+            -webkit-appearance: button;
+        }
+
+        button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+            border-style: none;
+            padding: 0;
+        }
+
+        button, [type="button"], [type="reset"], [type="submit"] {
+            outline: 1px dotted ButtonText;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        input {
+            padding: 2px 4px;
+        }
+
+        img {
+            display: block;
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+    </style>
+    <style data-tag="default-style-sheet">
+        html {
+            font-family: Cairo;
+            font-size: 16px;
+        }
+
+        body {
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: normal;
+            line-height: 1.15;
+            color: var(--dl-color-gray-black);
+            background-color: var(--dl-color-gray-white);
+
+        }
+    </style>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+            data-tag="font"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+            data-tag="font"
+    />
+
+    <style data-section-id="dropdown">
+        [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+            display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+            transform: rotate(90deg);
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'admin/css/home_page_v3.css' %}"/>
+</head>
+<body>
+<div>
+    <div class="home-container">
+        <div class="home-nav"></div>
+        <header data-role="Header" class="home-header">
+            <a href="#">
+                <img
+                        alt="logo"
+                        src="https://lh3.googleusercontent.com/nMPDHxLG48ssEcyXXFVRx52wZDi0z7dnfWx1USG78sRaPwjagxVSnZXJTg7T-kxP20UDiyTCMS2mJx7_QhdKTfIoFr4TOO289CqogxSYXIBzs0uejBPens1vnN-0U7nJGp1z49noZkZAlK53M0q0cW2nvf-NzHwywfADHPHLPXZ-iKwij3o0DYFYH3E517MrBHeE1sLWGV7KZxk68hyTqJYgarwSky3hJ9Kz4ZGUv_oGEfwMAhc7QQF6z_Q3JX8FZC1LDwqcNMvDP3VLSNpFoC86QkNHE7BAHph05khLq1WVSYa2b6bKui996RyG0jWMZEPLB2n2OZzmtwfX99ZT8OKXtZyl8501eyudoiRUsk859545AEBU0jjvc9_SqST2qs-LGYw90MaVMgTJUimSyudMrkoDroJxFbDgJ9nZawTL86t1OLPYy2RO8sGWvePcUXfr5oMaYI4MYzA5h3JrfMSSiGvESahP8LYDmH54VW4ZIeuYyncfsaIBPiWYZ8veSuyMKgT-dUZNs_k-HDDfOEvNrHT_sz8vcKNHb1fHVL3G3O0_NHgFsgRf3cmmkQShACCLEWKXYfTanHZoDPK4EX8AmolkjuqW_TWELZREh56UAF56rU7UqaGXAbmTarQDyxK1z2sfhPC4KxhDg9GoWmQcykwaiISauybVUhOA6l4hzTgHOJ3Om9hnt2RKmj8ixy9_ewFgpXI69bIeomp6xJbzlB9-Zq7AcuEHDJjwHsFSidPCbOa20G6CmcCCYR1cJEg8mZv02-0Lj5IbeoZ5m4Ab6sZkKGoznYCNiQKn-y9wlvWj-K983Ofeg_Y-do5eA__W-Q=w1920-h1080-no?authuser=2"
+                        class="home-image"
+                        style="cursor: pointer"
+                />
+            </a>
+            <div class="home-nav1">
+                <nav
+                        class="navigation-links3-nav navigation-links3-root-class-name10"
+                >
+                    <span class="navigation-links3-text"><span>About</span></span>
+                    {#              <span class="navigation-links3-text1"><span>Features</span></span>#}
+                    <span class="navigation-links3-text2"><span>Pricing</span></span>
+                    <span class="navigation-links3-text3"><span>Developer</span></span>
+                    {#              <span class="navigation-links3-text4"><span>Blog</span></span>#}
+                </nav>
+            </div>
+            <div class="home-btn-group">
+                <a href="{% url 'login' %}">
+                    <button class="home-login button">Login</button>
+                </a>
+                <button class="home-register button">Register</button>
+            </div>
+            <div data-type="BurgerMenu" class="home-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                    <path
+                            d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                </svg>
+            </div>
+            <div data-type="MobileMenu" class="home-mobile-menu">
+                <div class="home-nav2">
+                    <div class="home-container1">
+                        <img
+                                alt="image"
+                                src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                                class="home-image1"
+                        />
+                        <div data-type="CloseMobileMenu" class="home-menu-close">
+                            <svg viewBox="0 0 1024 1024" class="home-icon02">
+                                <path
+                                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <nav
+                            class="navigation-links3-nav navigation-links3-root-class-name11"
+                    >
+                        <span class="navigation-links3-text"><span>About</span></span>
+                        <span class="navigation-links3-text1">
+                  <span>Features</span>
+                </span>
+                        <span class="navigation-links3-text2">
+                  <span>Pricing</span>
+                </span>
+                        <span class="navigation-links3-text3"><span>Team</span></span>
+                        <span class="navigation-links3-text4"><span>Blog</span></span>
+                    </nav>
+                </div>
+                <div>
+                    <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
+                        <path
+                                d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                    </svg
+                    >
+                    <svg viewBox="0 0 877.7142857142857 1024" class="home-icon06">
+                        <path
+                                d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                        ></path>
+                    </svg
+                    >
+                    <svg viewBox="0 0 602.2582857142856 1024" class="home-icon08">
+                        <path
+                                d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
+        </header>
+        <img
+                alt="image"
+                src="https://lh3.googleusercontent.com/VzaQlPvIxEWO1ianQKu82-rEi08AhCFIT39e8a6d8z5-11tYSYp4KbIuAMCECyHgB8jqm4jdmWsIHsm_shLwmUBFrzv4Hyk9u4fkcsgnUD1L8HL7rEh-jOenC2LOwHZzKMnXqX7qjKwUb5wUJb4vWnZ8EnhuQU-DL63f_1UV4XaAWpmVINHNM5vweAPUb82yoV4IVx9lKnVFmg8Pm7sbtHC2nrZvGKm1N49o3xRHGTcfXie56zei2ItRQ8850vV1saQBz5Np35OEeyW2QI49H7VfJ_Y3cDyi41LtXenFf5HFaDC_PskDwxCg7FMygMtZ3qG_13lucu33slIABd_rtVmwd0TH2AhthBqXVUxi1XJKuhm4o2VPicyySsmu7BTJT_wvvZeRl-_I05ZZ8pZFp32JOUYgdG-2BkWJjs5MuqsYjPEbf1HcuEF6MD_hHyTlcGHyir9NtjPTgli9wht_kYIyx7VqtfVu4uDXRqe1ILK9Lqoa2SlyfVVfXinjYGOe2iLzIFPpgzer7yPKzcM2a_wg_BbkATgPESB8qusuZ8Lj0EL2PAUVI3moZ7HaHV1PTs3PySQ8Fk1aN3QXV765Lni67-fkJNZikI-EtHv3NUifSVgfSROrlJZmTNuWXhWGA1qofjp9Oj9Uyyaxi6weG6cE3tT4ZgcBd27NdeAfmq4WmT-4GXHOZOEH47LG6kiATcZ8w8R64pPCHBM016mETqJDsObJYvzG6K3ek2zKSIScsBhbu98oDQBVe0Y9SbSCtlG0a8UMcUe1ou5UOIZHLroqxaEbAW3t3hYfneDOIMwiYYH4DpVt6cWkfGz0yoxwIh0s2w=w1500-h691-no?authuser=2"
+                class="home-image2"
+        />
+        <div class="home-features">
+            <h1 class="home-text">
+                <span>Explore our favorite shows</span>
+                <br/>
+            </h1>
+            <span class="home-text03">
+            “We are all like fireworks: We climb, we shine and always go our
+            separate ways and become further apart. But even when that time
+            comes, let’s not disappear like a firework and continue to shine…
+            forever.” — Hitsugaya Toshiro (Bleach)
+          </span>
+        </div>
+        <div class="home-hero">
+            <img
+                    alt="image"
+                    src="https://lh3.googleusercontent.com/uSXvneqbrJRSehAKL_KMPYYVu6zDJCWm8wMucD_pznylSwZWfjNURte76fKtwY6J1xEAwxThSRlSnkjSgxibWM0tn5MmyYu8lTE3UDhID8dYFtXu6Zx2K7Hp_bnbkmdamSnZVyO69Om7H1SxQzY-TfDgp0aA-0xAaRd2LQg0HUzFgZdLgBxeoZZYv7mzxZDsl0KKgSpb2SIPO1mt1f_HvmeuTtpi0cL9WEN35Y9z3SrdUjeFLwU_zNm-sB5JARQeMAru7dyceiV-bMInJRlppQ6cHKM92C5lwUhox9r96zHmhsv_ukpYi1Dsyed9Cm0bHCJtn2ytZwk_xlWK1-4XTRAjwRs6YkisnPU-gctX9A4iQzg2k5kBzQkY6tCPWm7QjlpU5RDbtwGJdUzkbR3HXsF8nAT8qYZFImp4SIFcjrGZhQg3LGiXLvez2Mtk_a_0oNyoHD82a9nn7NNFhSyeUpY2D5y2y-Uam53E3pod6tBM8PvFEC4JgC-3Dt1QEBp54EZhB-Y1VFtaeuSlAfY8UzID1g10z_2Jn14djY5MOwjf49lWfoWpjrASd2dCRU6dGpUEO9dS6nO8VwJ_bmYhDzUQaI20aaFgDVdq-E2Oti6hNeYMJVSP5T6hz4DE0Cnb8uQ63ancwlIWeuv73_7rRlYifocve9Hpig8sIhG1mueXgS3S8swKs5_Uvpanicdm4hKaa1IXEYOaX-IU3nHli3bLDSuREdtgENPsYOBH96MTXZ2AQWmOW2mD8N27jVt1bcZF-gNqMAXvatpdbIVHWHByCxAYv4IRVusMCie0RQJCIzG41FFv0NwiGPEYyCNGHN-2NQ=w615-h400-no?authuser=2"
+                    class="home-image3"
+            />
+            <div class="home-container2">
+                <h1 class="home-text04">JUJUTSU KAISEN</h1>
+                <span class="home-text05">
+              Itadori Yūji è uno studente all&apos;apparenza normale, che di
+              normale non ha nulla, che frequenta il Club dell&apos;Occulto. I
+              suoi compagni si troveranno nei guai dopo aver trovato il dito
+              mummificato di Ryomen Sukuna, la più feroce divinità demoniaca, e
+              per salvarli così da diventare più forte sarà costretto a
+              ingoiarlo. Yūji diventa tutt&apos;uno con il demone e sotto la
+              guida del più potente degli stregoni, Satoru Gojō, entra
+              nell&apos;Istituto di Arti Occulte di Tokyo,
+              un&apos;organizzazione che combatte le Maledizioni; il suo destino
+              è già scritto: dovrà cercare tutte le 20 dita di Sukuna, ingerirle
+              per poi essere ucciso, così da porre fine una volta per tutte alla
+              minaccia che alberga dentro di lui.
+            </span>
+                <div class="home-btn-group1">
+                    <button class="home-button button">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="home-hero1">
+            <div class="home-container3">
+                <h1 class="home-text06">Hunter X Hunter</h1>
+                <span class="home-text07">
+              Nuovo adattamento dell&apos;omonimo manga di Yoshihiro Togashi,
+              Hunter x Hunter racconta la storia di Gon, un ragazzo dalle mille
+              risorse deciso a diventare Cacciatore per seguire le orme paterne
+              e poter, allo stesso tempo, comprendere meglio il genitore che lo
+              ha abbandonato ancora in fasce. Partito per la prova d&apos;esame
+              da cacciatore, a bordo di una nave Gon fa subito la conoscenza di
+              altri due aspiranti Cacciatori, Leorio e Kurapika, mentre incontra
+              il gioviale Killua e lo spietato Hisoka nelle primissime prove di
+              un esame apparentemente infinito...
+            </span>
+                <div class="home-btn-group2">
+                    <button class="home-button1 button">Learn More</button>
+                </div>
+            </div>
+            <img
+                    alt="image"
+                    src="https://lh3.googleusercontent.com/j_cehpuZNXES3aJBE2KgMgD2FZn_x9fojHAADfglSo8fkwJy1WyQ6t6KNE1vdJPZRv7nZ8mARSugkiseYo5o8S5kWFdBT-sYAB3MdBqm55nfKiW4EkxX5xI-dOqDIAg-TIxBthE_FZ5dQ3aWh9klxKIC2Hyqk3OMSSo9aVnfv4owaXKWACxBPuxcTV6AF7O-JHP4Ahwl9zgq00a8zdgCCp2NZ43hrTEydQWPEqm9QYKAIiclF7hgZ05-RyjpM2ZAJVqDjxnVsaa22KQTy0O9pNh1Xin6f-9NN42PlgYbaklWsKP3wLMddSukxrVN-LE9Y0YIPjAsG8qBPvFCiUrixxvngTVsBwNKSDbO61lzNmHoQix9009XgA3KWD0HWbkQEk_ObHBt28KTzJWpzYq2rB--IyfMzpc4O0wsLJIW58JlT9FhBnb3sB9u0-7PNGlfQv_50FGwh80VaZW9oBHBDNhcv9n-2irm5JxYw9_GBu_SEL52N-9uQr8isp3S2vRRcscjxcPOPLxWuTSOfZ7zSsp-rZMtRc8-_dluy2TtV5jpXGHU5hxx2ZWF4Jc0PaU7G9DpGfcfsGbjxPR54Q8a-2PQeSsrKIznIuqGgZd9S_NHvJtXSErUeJoUS8Hz07ibmxPtSAKpGjYvbG2yyf1ZJhtRr94gOOYOUAqjErHIx-aHIsLmuJ17n27Kwx93Bk97IUCik4H-c2sKkPsZXcXf4G7Wf5UDqhWYjTZ29W11BvyrKAMf8tp7z17eGBMjIGlCwN0bpsIW72rIehsKRQLVgELGeQnUvGjHkliCL2MENMOt1UGb0zCvbLTC4bi0dKAXxJ0onw=w1400-h788-no?authuser=2"
+                    class="home-image4"
+            />
+        </div>
+        <div class="home-hero2">
+            <img
+                    alt="image"
+                    src="https://lh3.googleusercontent.com/5WiGz--jIRKLMsb2cZuzpdc-xa8sZWOgvaMkTo4UPw1w3ZNwie5bMI-1A3Pf-9ZS6oTyNs69tFLT9ARdPknokV-rCZHsqG_uyC11Qra-cE4wrbSRm6NJDnlWzUYi04bM1WW18zln5ersXbSJn0SWgABCjW5gwRySh5sC_dN5a7Ztd6yQCpljuw3E2DLoxXDHfbQdSYPZO-Hcx5AUeWQFmWTKfXkO7kwhANZnVlW4iLHQn7UTAZwYHfw6tuANWTFvtM9y4Fnjj7gZMMncsmwVUnYaozQAByAIuUOFsVa2jlAHv5hcAP1RTED8mz7tOichXPzknOMtKZ8vSSBzNfTpd2x2bL48xOiAXyhKyqqBdVRnKpWU3X9LA_mpwagmKj0RTAwBMg8sR0YBkcIYJ90OWWZsOHSPa8Mh1qzCdPoava-rp7YZk7X9IJ1DQFXhPM_LmgwxbquHi3r2lSOd1yqDww2zZYUmTg0B4CJugOIpqrr7jY7SSuLJQuhXk2CJDcS2q1sqcog-0d01R-sryTW2XTCUPZCpW8IGMCHXTl84DLkJBvh2h0k1OjqfZh_u_0kU28YPE9VPt6vJKjrFxAtLPK-MTRmbL6BnwuBQBSKwuwfgEHc74NVdQyv6lsllM_lnQM2sk3WE7tlOsDeHk-ZjGICLa1r8Nod5TFhZVR-N79oc63AnLRK-hdx3EUInIKwE4HhP4Kltq3Y61eZIftgm7tp2LgpcHjPQgrRh5nUD-HH8KmfFfqZ2ZMTuSaT-Qtpk3xgzDSEkqlWydoPYWQdh9PW7rP0cd7QinhTjcp5D6mG-i2Cw6fjGUWliTE4bpc6sIzKSuQ=w601-h400-no?authuser=2"
+                    class="home-image5"
+            />
+            <div class="home-container4">
+                <h1 class="home-text08">HAIKYU!! </h1>
+                <span class="home-text09">
+              Dopo aver assistito a una partita di pallavolo, il giovane Shouyou
+              Hinata si pone come personale obbiettivo di diventare &quot;Il
+              piccolo Gigante&quot; di quello sport. Entrato nel club di
+              pallavolo della sua scuola media, affronta insieme alla squadra il
+              torneo interscolastico ma lui e i suoi compagni devono inchinarsi
+              di fronte a una forte squadra guidata da un formidabile giocatore
+              di nome Tobio Kageyama. Desideroso di arrivare ai vertici e di
+              prendersi la rivincita su Kageyama, Shouyou continua a praticare
+              la pallavolo anche alla sua entrata nel club scolastico alle
+              superiori dove però trova proprio il suo rivale.
+            </span>
+                <div class="home-btn-group3">
+                    <button class="home-button2 button">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <footer class="home-footer">
+            <div class="home-container5">
+                <img
+                        alt="logo"
+                        src="https://lh3.googleusercontent.com/nMPDHxLG48ssEcyXXFVRx52wZDi0z7dnfWx1USG78sRaPwjagxVSnZXJTg7T-kxP20UDiyTCMS2mJx7_QhdKTfIoFr4TOO289CqogxSYXIBzs0uejBPens1vnN-0U7nJGp1z49noZkZAlK53M0q0cW2nvf-NzHwywfADHPHLPXZ-iKwij3o0DYFYH3E517MrBHeE1sLWGV7KZxk68hyTqJYgarwSky3hJ9Kz4ZGUv_oGEfwMAhc7QQF6z_Q3JX8FZC1LDwqcNMvDP3VLSNpFoC86QkNHE7BAHph05khLq1WVSYa2b6bKui996RyG0jWMZEPLB2n2OZzmtwfX99ZT8OKXtZyl8501eyudoiRUsk859545AEBU0jjvc9_SqST2qs-LGYw90MaVMgTJUimSyudMrkoDroJxFbDgJ9nZawTL86t1OLPYy2RO8sGWvePcUXfr5oMaYI4MYzA5h3JrfMSSiGvESahP8LYDmH54VW4ZIeuYyncfsaIBPiWYZ8veSuyMKgT-dUZNs_k-HDDfOEvNrHT_sz8vcKNHb1fHVL3G3O0_NHgFsgRf3cmmkQShACCLEWKXYfTanHZoDPK4EX8AmolkjuqW_TWELZREh56UAF56rU7UqaGXAbmTarQDyxK1z2sfhPC4KxhDg9GoWmQcykwaiISauybVUhOA6l4hzTgHOJ3Om9hnt2RKmj8ixy9_ewFgpXI69bIeomp6xJbzlB9-Zq7AcuEHDJjwHsFSidPCbOa20G6CmcCCYR1cJEg8mZv02-0Lj5IbeoZ5m4Ab6sZkKGoznYCNiQKn-y9wlvWj-K983Ofeg_Y-do5eA__W-Q=w1920-h1080-no?authuser=2"
+                        class="home-image6"
+                />
+                <nav class="home-nav3">
+                    <span class="home-text10">About</span>
+                    {#                    <span class="home-text11">Features</span>#}
+                    <span class="home-text12">Pricing</span>
+                    <span class="home-text13">Developer</span>
+                    {#                    <span class="home-text14">Blog</span>#}
+                </nav>
+            </div>
+            <div class="home-separator"></div>
+            <div class="home-container6">
+            <span class="home-text15">
+              © 2022 Rush Anime, All Rights Reserved.
+            </span>
+                <div class="home-icon-group1">
+                    <a href="https://github.com/mada-droid">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                             aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             class="home-icon10">
+                            <title>Github</title>
+                            <path data-name="layer2"
+                                  d="M32 0a32.021 32.021 0 0 0-10.1 62.4c1.6.3 2.2-.7 2.2-1.5v-6c-8.9 1.9-10.8-3.8-10.8-3.8-1.5-3.7-3.6-4.7-3.6-4.7-2.9-2 .2-1.9.2-1.9 3.2.2 4.9 3.3 4.9 3.3 2.9 4.9 7.5 3.5 9.3 2.7a6.93 6.93 0 0 1 2-4.3c-7.1-.8-14.6-3.6-14.6-15.8a12.27 12.27 0 0 1 3.3-8.6 11.965 11.965 0 0 1 .3-8.5s2.7-.9 8.8 3.3a30.873 30.873 0 0 1 8-1.1 30.292 30.292 0 0 1 8 1.1c6.1-4.1 8.8-3.3 8.8-3.3a11.965 11.965 0 0 1 .3 8.5 12.1 12.1 0 0 1 3.3 8.6c0 12.3-7.5 15-14.6 15.8a7.746 7.746 0 0 1 2.2 5.9v8.8c0 .9.6 1.8 2.2 1.5A32.021 32.021 0 0 0 32 0z"
+                                  fill=#D9D9D9></path>
+                            <path data-name="layer1"
+                                  d="M12.1 45.9c-.1.2-.3.2-.5.1s-.4-.3-.3-.5.3-.2.6-.1c.2.2.3.4.2.5zm1.3 1.5a.589.589 0 0 1-.8-.8.631.631 0 0 1 .7.1.494.494 0 0 1 .1.7zm1.3 1.8a.585.585 0 0 1-.7-.3.6.6 0 0 1 0-.8.585.585 0 0 1 .7.3c.2.3.2.7 0 .8zm1.7 1.8c-.2.2-.5.1-.8-.1-.3-.3-.4-.6-.2-.8a.619.619 0 0 1 .8.1.554.554 0 0 1 .2.8zm2.4 1c-.1.3-.4.4-.8.3s-.6-.4-.5-.7.4-.4.8-.3c.3.2.6.5.5.7zm2.6.2c0 .3-.3.5-.7.5s-.7-.2-.7-.5.3-.5.7-.5c.4.1.7.3.7.5zm2.4-.4q0 .45-.6.6a.691.691 0 0 1-.8-.3q0-.45.6-.6c.5-.1.8.1.8.3z"
+                                  fill="#202020"></path>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mohamed-marzouk-0666131b0/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                             aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             class="home-icon14">
+                            <title>Linkedin</title>
+                            <path data-name="layer1"
+                                  fill="#D9D9D9"
+                                  d="M1.15 21.7h13V61h-13zm46.55-1.3c-5.7 0-9.1 2.1-12.7 6.7v-5.4H22V61h13.1V39.7c0-4.5 2.3-8.9 7.5-8.9s8.3 4.4 8.3 8.8V61H64V38.7c0-15.5-10.5-18.3-16.3-18.3zM7.7 2.6C3.4 2.6 0 5.7 0 9.5s3.4 6.9 7.7 6.9 7.7-3.1 7.7-6.9S12 2.6 7.7 2.6z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script
+        data-section-id="header"
+        src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
