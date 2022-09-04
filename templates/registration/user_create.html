@@ -1,12 +1,110 @@
+{#{% extends 'base.html' %}#}
+{#{% load crispy_forms_tags %}#}
+{##}
+{#{% block title %}Register{% endblock %}#}
+{##}
+{#{% block content %}#}
+{#    <h1>Register</h1>#}
+{#    <form method="post">{% csrf_token %}#}
+{#        {{ form|crispy }}#}
+{#        <input type="submit" value="Confirm">#}
+{#    </form>#}
+{#{% endblock %}#}
+
+
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
+{% load static %}
 
-{% block title %}Register{% endblock %}
+<style>
+
+</style>
+
+{% block title %}
+    user-Registration
+{% endblock %}
+
+{% block head %}
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+            data-tag="font"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+            data-tag="font"
+    />
+{% endblock %}
+
+
 
 {% block content %}
-    <h1>Register</h1>
-    <form method="post">{% csrf_token %}
-        {{ form|crispy }}
-        <input type="submit" value="Confirm">
-    </form>
+
+    <body class="bg-gradient-primary"
+          style="background-image: url(https://wallpaperaccess.com/full/21633.jpg);
+          background-size: cover;background-repeat: no-repeat;background-attachment: fixed;">
+
+
+    <div class="container">
+
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image" style="
+    background: url(https://wallpaperaccess.com/full/3869011.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+border-radius: 8px;"></div>
+
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <a href="{% url 'home-page' %}">
+                                            <img style="width: 30px;vertical-align: bottom;"
+                                                 src="https://scontent.fmxp4-1.fna.fbcdn.net/v/t39.30808-6/305250849_106682945516292_9137415185528842342_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=TjKv6k8pCPsAX-JBRpV&_nc_ht=scontent.fmxp4-1.fna&oh=00_AT84d3pt5w6RtBi8WXJwhqsClnCFPoT_bPLkKgNyo2jSXQ&oe=631A5E50"
+                                                 title="Home Page">
+                                        </a>
+                                        <h1 style="font-family: Orbitron; display: inline; ;margin-left: 50px"
+                                            class="h4 text-gray-900 mb-4">Register</h1>
+                                    </div>
+                                    <form style="text-align: center; font-family: Orbitron"
+                                          method="post">{% csrf_token %}
+
+                                        <lord-icon
+                                                src="https://cdn.lordicon.com/dxjqoygy.json"
+                                                trigger="loop"
+                                                delay="2000"
+                                                colors="primary:#121331,secondary:#08a88a"
+                                                state="hover-looking-around"
+                                                style="width:200px;height:185px;display: block;margin-left: auto;margin-right: auto;">
+                                        </lord-icon>
+                                        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                                        {{ form|crispy }}
+                                        <button class="btn btn-primary" type="submit">Register Account</button>
+                                    </form>
+                                    <div class="text-center">
+                                        <a style="font-family: Cairo; font-size: 20px" class="small"
+                                           href="{% url 'login' %}">Already have an account!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
 {% endblock %}
