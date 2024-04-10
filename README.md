@@ -1,7 +1,7 @@
-Anime Streaming Website - E-commerce Web App
+# Anime Streaming Website - E-commerce Web App
 This GitHub repository houses an e-commerce web application developed using Python and Django, specifically designed for the creation of an anime streaming website. The project aims to provide a comprehensive platform where users can browse and stream their favorite anime series and movies.
 
-Key Features:
+##Key Features:
 Anime Catalog: The web app offers a vast catalog of anime series and movies, allowing users to explore and discover new titles.
 User Registration and Authentication: Users can create accounts, log in, and manage their personal profiles, including preferences and watch history.
 Streaming Capabilities: The application enables seamless streaming of anime content, providing an immersive viewing experience.
